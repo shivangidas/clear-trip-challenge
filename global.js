@@ -9,7 +9,7 @@ $(document).ready(function(e) {
       sessionStorage.setItem("posts", JSON.stringify(data)); //storing data in session for sorting
       data.forEach(function(post) {
         //html stores the list of news in html format
-        html += "<li><div id='news'><a id='link-url' target='_blank' href='";
+        html += "<li><div id='news'><a class='link-url' target='_blank' href='";
         html += post.url + "'>" + post.title;
         html += "</a>";
         html += "<span class='author'>&nbsp;&nbsp;author: " + post.author + "</span>";
